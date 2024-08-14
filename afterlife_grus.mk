@@ -9,8 +9,14 @@ $(call inherit-product, device/xiaomi/grus/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Afterlife_flags
+AFTERLIFE_MAINTAINER := sweetbtrfly 
+USE_PIXEL_CHARGING := true 
+TARGET_SUPPORTS_BLUR := true 
+TARGET_FACE_UNLOCK_SUPPORTED := true 
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_grus
+PRODUCT_NAME := afterlife_grus
 PRODUCT_DEVICE := grus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9 SE
