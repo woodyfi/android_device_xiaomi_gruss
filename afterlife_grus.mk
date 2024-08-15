@@ -7,7 +7,7 @@
 $(call inherit-product, device/xiaomi/grus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Afterlife_flags
 AFTERLIFE_MAINTAINER := sweetbtrfly 
