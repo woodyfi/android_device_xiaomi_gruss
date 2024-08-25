@@ -7,16 +7,22 @@
 $(call inherit-product, device/xiaomi/grus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+$(call inherit-product, vendor/oroin/config/common_full_phone.mk)
 
-# Afterlife_flags
-AFTERLIFE_MAINTAINER := sweetbtrfly 
-USE_PIXEL_CHARGING := true 
-TARGET_SUPPORTS_BLUR := true 
-TARGET_FACE_UNLOCK_SUPPORTED := true 
+ORION_MAINTAINER := Stfu_co v2
+ORION_MAINTAINER_LINK := t.me/blast_dao
+ORION_BUILD_TYPE := UNOFFICIAL
+ORION_GAPPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_HAS_UDFPS :=  true
+
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := afterlife_grus
+PRODUCT_NAME := orion_grus
 PRODUCT_DEVICE := grus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9 SE
